@@ -12,6 +12,7 @@ extension UITextView {
         self.layer.cornerRadius = 5.0
         self.font = UIFont.systemFont(ofSize: 14.0)
         self.isScrollEnabled = true
+        self.heightAnchor.constraint(equalToConstant: 100).isActive = true
         //self.textContainer.maximumNumberOfLines = maximumNumberOfLines
         self.textContainer.lineBreakMode = .byTruncatingTail
         self.translatesAutoresizingMaskIntoConstraints = false

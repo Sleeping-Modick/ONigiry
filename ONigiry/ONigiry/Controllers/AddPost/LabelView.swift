@@ -94,7 +94,7 @@ final class LabelView: UIView, UITextViewDelegate {
         let tendency7 = Tendency(title: "내배캠", clicked: false)
         let tendency8 = Tendency(title: "내배캠", clicked: false)
 
-        let tendencyList1 = [tendency1,tendency2,tendency3,tendency4, tendency5, tendency6, tendency7]
+        let tendencyList1 = [tendency1,tendency2,tendency3,tendency4, tendency5, tendency6, tendency7,tendency1,tendency2,tendency3,tendency4, tendency5, tendency6, tendency7, tendency1,tendency2,tendency3,tendency4, tendency5, tendency6, tendency7, tendency1,tendency2,tendency3,tendency4, tendency5, tendency6, tendency7, tendency1,tendency2,tendency3,tendency4, tendency5, tendency6, tendency7, tendency1,tendency2,tendency3,tendency4, tendency5, tendency6, tendency7, tendency1,tendency2,tendency3,tendency4, tendency5, tendency6, tendency7]
         let tendencyHeader1 = TendencyHeaders(tendencyList: tendencyList1)
         
         let headers = [tendencyHeader1] //, tendencyHeader2]

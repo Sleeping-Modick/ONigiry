@@ -2,17 +2,17 @@ import SnapKit
 import UIKit
 
 final class AddPostViewController: UIViewController {
+    private var scrollView = UIScrollView()
+    private var contentView = UIView()
+    
     var labelView = LabelView()
-    private var collectionView: UICollectionView!
     let fruits = ["사과", "배", "포도", "망고", "딸기", "바나나", "파인애플"]
-    let tagList = ["Swift", "iOS"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         
         customNavigationBarButtons()
-        
         view.addSubview(labelView.verticalStackView)
         setupUI()
         createPickerView(tagNo: 1)
@@ -27,12 +27,31 @@ final class AddPostViewController: UIViewController {
         labelView.addPhoto.text = "사진추가"
         labelView.keyWord.text = "키워드"
         
-        verticalStackView.snp.makeConstraints { make in
-            make.leading.equalTo(view.safeAreaLayoutGuide.snp.leading).offset(16.0)
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(16.0)
-            make.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing).offset(-16.0)
-            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-90.0)
+        view.addSubview(scrollView)
+        view.addSubview(contentView)
+        contentView.addSubview(verticalStackView)
+        
+        scrollView.snp.makeConstraints { make in
+            make.leading.equalTo(view.safeAreaLayoutGuide.snp.leading)
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            make.trailing.equalTo(view.safeAreaLayoutGuide.snp.trailing)
         }
+        
+        contentView.snp.makeConstraints { make in
+            make.leading.equalTo(scrollView.snp.leading).offset(16.0)
+            make.top.equalTo(scrollView.snp.top).offset(16.0)
+            make.trailing.equalTo(scrollView.snp.trailing).offset(-16.0)
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-16)
+        }
+        
+        verticalStackView.snp.makeConstraints { make in
+            make.leading.equalTo(contentView.snp.leading)
+            make.top.equalTo(contentView.snp.top)
+            make.trailing.equalTo(contentView.snp.trailing)
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(0)
+        }
+        
+        scrollView.contentSize = CGSize(width: view.frame.width, height: verticalStackView.frame.size.height)
          
         // 라벨들을 수직 스택뷰에 추가
         labelView.sectionStackView.addArrangedSubview(labelView.selectSection)
@@ -49,7 +68,6 @@ final class AddPostViewController: UIViewController {
         verticalStackView.addArrangedSubview(labelView.addPhoto)
         verticalStackView.addArrangedSubview(labelView.keyWordStackView)
         verticalStackView.addArrangedSubview(labelView.tendencyView)
-        
     }
 }
 

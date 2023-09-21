@@ -1,8 +1,6 @@
 import UIKit
 
-
 final class LabelView: UIView, UITextViewDelegate {
-    
     lazy var verticalStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.verticalStackView(spacing: 30)
@@ -41,7 +39,6 @@ final class LabelView: UIView, UITextViewDelegate {
         let textField = UITextField()
         textField.borderStyle = .roundedRect
         textField.placeholder = "제목 입력"
-//        textField.widthAnchor.constraint(equalToConstant: 300).isActive = true
         return textField
     }()
     
@@ -59,22 +56,7 @@ final class LabelView: UIView, UITextViewDelegate {
     
     lazy var contentTextView: UITextView = {
         let textView = UITextView()
-        textView.text = "??"
-        textView.delegate = self
-        textView.isHidden = false
-        textView.layer.borderWidth = 1.0
-        textView.backgroundColor = .systemRed
-        textView.layer.borderColor = UIColor.lightGray.cgColor
-        textView.clipsToBounds = true
-        textView.contentInset = .init(top: 40, left: 30, bottom: 20, right: 10)
-        textView.textContainerInset = .init(top: 40, left: 30, bottom: 20, right: 10)
-        textView.scrollIndicatorInsets = .init(top: 10, left: 10, bottom: 10, right: 20)
-        textView.layer.cornerRadius = 5.0
-        textView.font = UIFont.systemFont(ofSize: 14.0)
-        textView.isScrollEnabled = true
-        textView.textContainer.maximumNumberOfLines = 5
-        textView.textContainer.lineBreakMode = .byTruncatingTail
-        textView.translatesAutoresizingMaskIntoConstraints = false
+        textView.customTextView()
         return textView
     }()
     
@@ -88,5 +70,38 @@ final class LabelView: UIView, UITextViewDelegate {
         let label = UILabel()
         label.customLabel(textColor: .black, font: UIFont.systemFont(ofSize: 17))
         return label
+    }()
+    
+    let addKeyWord: UIButton = {
+        let button = UIButton()
+        button.setImage(UIImage(systemName: "plus"), for: .normal)
+        return button
+    }()
+    
+    lazy var keyWordStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.horizontalStackView(spacing: 0)
+        return stackView
+    }()
+    
+    lazy var tendencyView : TendencyCV = {
+        let tendency1 = Tendency(title: "Swift", clicked: false)
+        let tendency2 = Tendency(title: "iOS", clicked: false)
+        let tendency3 = Tendency(title: "코딩", clicked: false)
+        let tendency4 = Tendency(title: "내배캠", clicked: false)
+        let tendency5 = Tendency(title: "내배캠", clicked: false)
+        let tendency6 = Tendency(title: "내배캠", clicked: false)
+        let tendency7 = Tendency(title: "내배캠", clicked: false)
+        let tendency8 = Tendency(title: "내배캠", clicked: false)
+
+        let tendencyList1 = [tendency1,tendency2,tendency3,tendency4, tendency5, tendency6, tendency7]
+        let tendencyHeader1 = TendencyHeaders(tendencyList: tendencyList1)
+        
+        let headers = [tendencyHeader1] //, tendencyHeader2]
+        
+        let tendencyView = TendencyCV(items: headers)
+        
+        tendencyView.translatesAutoresizingMaskIntoConstraints = false
+        return tendencyView
     }()
 }

@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let tabs: [(root: UIViewController, icon: String)] = [
             (MainViewController(), "house"),
             (ProfileViewController(), "person"),
-            (AddPostViewController(), "plus")
+            (AddPostViewController(), "plus"),
         ]
 
         tabBarController.setViewControllers(tabs.map { root, icon in

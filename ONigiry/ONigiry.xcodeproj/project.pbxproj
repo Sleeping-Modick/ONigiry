@@ -25,6 +25,13 @@
 		FB75BEA72ABBF71C0085EC21 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB75BEA62ABBF71C0085EC21 /* LabelView.swift */; };
 		FB75BEAA2ABBF7620085EC21 /* UILable +.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB75BEA92ABBF7620085EC21 /* UILable +.swift */; };
 		FB75BEAC2ABBF7770085EC21 /* UIStackView +.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB75BEAB2ABBF7770085EC21 /* UIStackView +.swift */; };
+		FB75BEAE2ABC1E0C0085EC21 /* UITextView +.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB75BEAD2ABC1E0C0085EC21 /* UITextView +.swift */; };
+		FB75BEB22ABC3D550085EC21 /* TendencyCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB75BEB12ABC3D550085EC21 /* TendencyCV.swift */; };
+		FB75BEB42ABC455F0085EC21 /* TendencyCV +.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB75BEB32ABC455F0085EC21 /* TendencyCV +.swift */; };
+		FB75BEB62ABC45950085EC21 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB75BEB52ABC45950085EC21 /* LeftAlignedCollectionViewFlowLayout.swift */; };
+		FB75BEB82ABC45BD0085EC21 /* TendencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB75BEB72ABC45BD0085EC21 /* TendencyCell.swift */; };
+		FB75BEBA2ABC45EB0085EC21 /* TendencyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB75BEB92ABC45EB0085EC21 /* TendencyHeader.swift */; };
+		FB75BEBC2ABC46220085EC21 /* TendencyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB75BEBB2ABC46220085EC21 /* TendencyItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +80,13 @@
 		FB75BEA62ABBF71C0085EC21 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 		FB75BEA92ABBF7620085EC21 /* UILable +.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILable +.swift"; sourceTree = "<group>"; };
 		FB75BEAB2ABBF7770085EC21 /* UIStackView +.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView +.swift"; sourceTree = "<group>"; };
+		FB75BEAD2ABC1E0C0085EC21 /* UITextView +.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView +.swift"; sourceTree = "<group>"; };
+		FB75BEB12ABC3D550085EC21 /* TendencyCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TendencyCV.swift; sourceTree = "<group>"; };
+		FB75BEB32ABC455F0085EC21 /* TendencyCV +.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TendencyCV +.swift"; sourceTree = "<group>"; };
+		FB75BEB52ABC45950085EC21 /* LeftAlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		FB75BEB72ABC45BD0085EC21 /* TendencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TendencyCell.swift; sourceTree = "<group>"; };
+		FB75BEB92ABC45EB0085EC21 /* TendencyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TendencyHeader.swift; sourceTree = "<group>"; };
+		FB75BEBB2ABC46220085EC21 /* TendencyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TendencyItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +234,12 @@
 			children = (
 				FB75BEA42ABBF70A0085EC21 /* AddPostViewController.swift */,
 				FB75BEA62ABBF71C0085EC21 /* LabelView.swift */,
+				FB75BEB12ABC3D550085EC21 /* TendencyCV.swift */,
+				FB75BEB32ABC455F0085EC21 /* TendencyCV +.swift */,
+				FB75BEB52ABC45950085EC21 /* LeftAlignedCollectionViewFlowLayout.swift */,
+				FB75BEB72ABC45BD0085EC21 /* TendencyCell.swift */,
+				FB75BEB92ABC45EB0085EC21 /* TendencyHeader.swift */,
+				FB75BEBB2ABC46220085EC21 /* TendencyItem.swift */,
 			);
 			path = AddPost;
 			sourceTree = "<group>";
@@ -229,6 +249,7 @@
 			children = (
 				FB75BEA92ABBF7620085EC21 /* UILable +.swift */,
 				FB75BEAB2ABBF7770085EC21 /* UIStackView +.swift */,
+				FB75BEAD2ABC1E0C0085EC21 /* UITextView +.swift */,
 			);
 			path = "Componants +";
 			sourceTree = "<group>";
@@ -472,12 +493,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EE1BB0F2AAF57B900AACEDF /* ProfileViewController.swift in Sources */,
+				FB75BEBC2ABC46220085EC21 /* TendencyItem.swift in Sources */,
+				FB75BEAE2ABC1E0C0085EC21 /* UITextView +.swift in Sources */,
+				FB75BEBA2ABC45EB0085EC21 /* TendencyHeader.swift in Sources */,
 				4EE1BB0D2AAF57AD00AACEDF /* SearchViewController.swift in Sources */,
 				4EE1BADB2AAF56C300AACEDF /* MainViewController.swift in Sources */,
+				FB75BEB42ABC455F0085EC21 /* TendencyCV +.swift in Sources */,
 				4EE1BB0B2AAF577D00AACEDF /* TabBarController.swift in Sources */,
 				4EE1BAD72AAF56C300AACEDF /* AppDelegate.swift in Sources */,
 				FB75BEAA2ABBF7620085EC21 /* UILable +.swift in Sources */,
 				FB75BEA72ABBF71C0085EC21 /* LabelView.swift in Sources */,
+				FB75BEB22ABC3D550085EC21 /* TendencyCV.swift in Sources */,
+				FB75BEB62ABC45950085EC21 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
+				FB75BEB82ABC45BD0085EC21 /* TendencyCell.swift in Sources */,
 				FB75BEAC2ABBF7770085EC21 /* UIStackView +.swift in Sources */,
 				4EE1BAD92AAF56C300AACEDF /* SceneDelegate.swift in Sources */,
 				FB75BEA52ABBF70A0085EC21 /* AddPostViewController.swift in Sources */,

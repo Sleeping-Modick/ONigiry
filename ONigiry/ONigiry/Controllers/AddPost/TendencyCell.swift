@@ -40,7 +40,6 @@ class TendencyCell:UICollectionViewCell{
             view.rightAnchor.constraint(equalTo: self.contentView.rightAnchor , constant: -5) ,
             view.topAnchor.constraint(equalTo: self.topAnchor , constant: 5),
             view.bottomAnchor.constraint(equalTo: self.bottomAnchor , constant: -5)
-
         ])
     }
 }

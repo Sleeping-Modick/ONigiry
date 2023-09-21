@@ -6,7 +6,7 @@ extension UIStackView {
     func verticalStackView(spacing: CGFloat){
         self.translatesAutoresizingMaskIntoConstraints = false
         self.axis = .vertical
-        self.alignment = .leading
+        self.alignment = .fill
         self.spacing = spacing
     }
     

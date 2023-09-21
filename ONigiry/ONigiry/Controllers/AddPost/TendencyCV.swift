@@ -63,10 +63,10 @@ class TendencyCV: UIView {
     
         /// 컬렉션뷰 제약조건 설정
         NSLayoutConstraint.activate([
-            collectionView.widthAnchor.constraint(equalTo: self.widthAnchor) ,
-            collectionView.heightAnchor.constraint(equalTo: self.heightAnchor) ,
-            collectionView.centerYAnchor.constraint(equalTo: self.centerYAnchor) ,
-            collectionView.centerXAnchor.constraint(equalTo: self.centerXAnchor)
+            collectionView.topAnchor.constraint(equalTo: super.topAnchor) ,
+            collectionView.bottomAnchor.constraint(equalTo: super.bottomAnchor, constant: -60) ,
+            collectionView.leadingAnchor.constraint(equalTo: super.leadingAnchor) ,
+            collectionView.trailingAnchor.constraint(equalTo: super.trailingAnchor)
         ])
     }
 }

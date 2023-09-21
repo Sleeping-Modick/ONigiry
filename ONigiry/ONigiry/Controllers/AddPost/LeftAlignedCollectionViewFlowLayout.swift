@@ -9,9 +9,9 @@ class LeftAlignedCollectionViewFlowLayout: UICollectionViewFlowLayout {
         }
         
         /// 레이아웃을 지정할 수 있는 속성들
-        for attribute in attributes{
-            //print("frame:\(attribute.frame) , maxX:\(attribute.frame.maxX) row : \(attribute.indexPath.row)")
-        }
+//        for attribute in attributes{
+//            //print("frame:\(attribute.frame) , maxX:\(attribute.frame.maxX) row : \(attribute.indexPath.row)")
+//        }
         /*
          #FlowLayout이 배치한 attributes에는 frame과 indexPath 등의 요소들이 있는데,
          이 요소들을 이용해서 cell을 움직일 수 있다.

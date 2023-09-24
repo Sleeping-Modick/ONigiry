@@ -10,6 +10,8 @@
 		2E9999DDAB1300CCA5B1552E /* Pods_ONigiry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E4350DF88CFBBA888FC1CA /* Pods_ONigiry.framework */; };
 		324A0058AE4824C9785EDB00 /* Pods_ONigiryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF324197442EA6FA4FC6A1AD /* Pods_ONigiryTests.framework */; };
 		3A981BF5DE03A4BB211BC087 /* Pods_ONigiry_ONigiryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8BF31783B464D76CE1CDAF /* Pods_ONigiry_ONigiryUITests.framework */; };
+		4E4D909E2AC0A8BC0028D4D7 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D909D2AC0A8BC0028D4D7 /* CustomTableView.swift */; };
+		4E4D90A02AC0A9DE0028D4D7 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D909F2AC0A9DE0028D4D7 /* MainCell.swift */; };
 		4EE1BAD72AAF56C300AACEDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE1BAD62AAF56C300AACEDF /* AppDelegate.swift */; };
 		4EE1BAD92AAF56C300AACEDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE1BAD82AAF56C300AACEDF /* SceneDelegate.swift */; };
 		4EE1BADB2AAF56C300AACEDF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE1BADA2AAF56C300AACEDF /* MainViewController.swift */; };
@@ -42,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		3759ACE42BDF06470D39FDB2 /* Pods-ONigiryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ONigiryTests.debug.xcconfig"; path = "Target Support Files/Pods-ONigiryTests/Pods-ONigiryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4E4D909D2AC0A8BC0028D4D7 /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
+		4E4D909F2AC0A9DE0028D4D7 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		4EE1BAD32AAF56C300AACEDF /* ONigiry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ONigiry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EE1BAD62AAF56C300AACEDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EE1BAD82AAF56C300AACEDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				4EE1BAE12AAF56C600AACEDF /* LaunchScreen.storyboard */,
+				4E4D909D2AC0A8BC0028D4D7 /* CustomTableView.swift */,
+				4E4D909F2AC0A9DE0028D4D7 /* MainCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,7 +208,6 @@
 				3759ACE42BDF06470D39FDB2 /* Pods-ONigiryTests.debug.xcconfig */,
 				9C5F6D22D0EF1F7E0DA3320A /* Pods-ONigiryTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -450,6 +455,8 @@
 				4EE1BB0B2AAF577D00AACEDF /* TabBarController.swift in Sources */,
 				4EE1BAD72AAF56C300AACEDF /* AppDelegate.swift in Sources */,
 				4EE1BAD92AAF56C300AACEDF /* SceneDelegate.swift in Sources */,
+				4E4D90A02AC0A9DE0028D4D7 /* MainCell.swift in Sources */,
+				4E4D909E2AC0A8BC0028D4D7 /* CustomTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

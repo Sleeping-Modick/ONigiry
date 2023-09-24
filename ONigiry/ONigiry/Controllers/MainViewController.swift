@@ -9,26 +9,53 @@ import SnapKit
 import UIKit
 
 class MainViewController: UIViewController {
+    var tableView = CustomTableView(frame: .zero, style: .insetGrouped)
+
+    let tempSection = ["애니메이션", "영화", "여행"]
+}
+
+extension MainViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup()
+    }
+}
+
+extension MainViewController {
+    func setup() {
         view.backgroundColor = .systemBackground
-        setupUI()
+        setupTableView()
+        registerCell()
     }
 
-    let textButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("TEST BUTTON", for: .normal)
-        button.backgroundColor = UIColor.systemRed
-        button.layer.cornerRadius = 10
-        return button
-    }()
+    func setupTableView() {
+        tableView.dataSource = self
 
-    func setupUI() {
-        view.addSubview(textButton)
-        textButton.snp.makeConstraints { make in
-            make.centerX.centerY.equalTo(view)
-            make.width.equalTo(150)
-            make.height.equalTo(60)
+        tableView.backgroundColor = .systemPink
+        view.addSubview(tableView)
+        tableView.snp.makeConstraints { make in
+            make.top.bottom.equalTo(view.safeAreaLayoutGuide)
+            make.leading.trailing.equalToSuperview()
         }
+    }
+
+    func registerCell() {
+        tableView.register(MainCell.self, forCellReuseIdentifier: MainCell.identifier)
+    }
+}
+
+extension MainViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return tempSection.count
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: MainCell.identifier, for: indexPath) as? MainCell else { return UITableViewCell() }
+        cell.backgroundColor = .systemOrange
+        return cell
     }
 }

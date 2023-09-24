@@ -217,7 +217,7 @@
 				4EE1BACF2AAF56C300AACEDF /* Sources */,
 				4EE1BAD02AAF56C300AACEDF /* Frameworks */,
 				4EE1BAD12AAF56C300AACEDF /* Resources */,
-				0A0F381798201EDD39E84547 /* [CP] Embed Pods Frameworks */,
+				CD324575A02E59D044CF43A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,7 +255,7 @@
 				4EE1BAEF2AAF56C600AACEDF /* Sources */,
 				4EE1BAF02AAF56C600AACEDF /* Frameworks */,
 				4EE1BAF12AAF56C600AACEDF /* Resources */,
-				B4D679BEE7AA697370E213D5 /* [CP] Embed Pods Frameworks */,
+				1361CA0B9ADCF45C52D43C1C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -337,21 +337,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A0F381798201EDD39E84547 /* [CP] Embed Pods Frameworks */ = {
+		1361CA0B9ADCF45C52D43C1C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ONigiry/Pods-ONigiry-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ONigiry-ONigiryUITests/Pods-ONigiry-ONigiryUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ONigiry/Pods-ONigiry-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ONigiry-ONigiryUITests/Pods-ONigiry-ONigiryUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ONigiry/Pods-ONigiry-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ONigiry-ONigiryUITests/Pods-ONigiry-ONigiryUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4A07CE7BE6A2DA8D280A57F9 /* [CP] Check Pods Manifest.lock */ = {
@@ -398,21 +398,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B4D679BEE7AA697370E213D5 /* [CP] Embed Pods Frameworks */ = {
+		CD324575A02E59D044CF43A4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ONigiry-ONigiryUITests/Pods-ONigiry-ONigiryUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ONigiry/Pods-ONigiry-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ONigiry-ONigiryUITests/Pods-ONigiry-ONigiryUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ONigiry/Pods-ONigiry-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ONigiry-ONigiryUITests/Pods-ONigiry-ONigiryUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ONigiry/Pods-ONigiry-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E8A939DEC4FD5AB1512551EF /* [CP] Check Pods Manifest.lock */ = {
